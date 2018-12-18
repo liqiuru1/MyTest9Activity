@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <android.support.v4.view.ViewPager
+        android:layout_marginTop="20dp"
+        android:id="@+id/vp_p"
+        android:layout_width="match_parent"
+        android:layout_height="150dp" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:text="全部"
+        android:textSize="20dp"
+        android:textColor="#000"
+        android:layout_marginLeft="10dp"/>
+    <cn.qc.com.mytest9activity.MyListView
+        android:id="@+id/lv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+</LinearLayout>

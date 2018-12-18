@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <ScrollView
+        android:id="@+id/scroll"
+        android:visibility="visible"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="50dp">
+
+
+
+        <FrameLayout
+            android:id="@+id/fraem"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+          />
+
+
+    </ScrollView>
+
+
+    <LinearLayout
+        android:id="@+id/linear"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:background="#fff"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tv_story"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:drawableTop="@mipmap/tabbar_icon_story_n"
+            android:gravity="center"
+            android:text="故事"
+            android:textColor="#2f2a2a"
+            android:textSize="12dp" />
+
+        <TextView
+            android:id="@+id/tv_parenting"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:drawableTop="@mipmap/tabbar_icon_lis_n"
+            android:gravity="center"
+            android:text="亲子"
+            android:textColor="#2f2a2a"
+            android:textSize="12dp" />
+    </LinearLayout>
+</RelativeLayout>

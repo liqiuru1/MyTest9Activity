@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/vp_s"
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="150dp" />
+
+
+
+    <LinearLayout
+        android:id="@+id/linear"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tv_new"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:drawableTop="@mipmap/story_icon_new"
+            android:gravity="center"
+            android:text="最新"
+            android:textColor="#2f2a2a"
+            android:textSize="12dp" />
+
+        <TextView
+            android:id="@+id/tv_morning"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:drawableTop="@mipmap/story_icon_morning"
+            android:gravity="center"
+            android:text="叫早"
+            android:textColor="#2f2a2a"
+            android:textSize="12dp" />
+
+        <TextView
+            android:id="@+id/tv_sleep"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:drawableTop="@mipmap/story_icon_sleep"
+            android:gravity="center"
+            android:text="叫早"
+            android:textColor="#2f2a2a"
+            android:textSize="12dp" />
+
+        <TextView
+            android:id="@+id/tv_classify"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:drawableTop="@mipmap/story_icon_classify"
+            android:gravity="center"
+            android:text="叫早"
+            android:textColor="#2f2a2a"
+            android:textSize="12dp" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginLeft="100dp"
+        android:layout_marginRight="100dp"
+        android:layout_marginTop="20dp">
+
+        <TextView
+            android:id="@+id/tv_1"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_marginTop="10dp"
+            android:gravity="center_horizontal"
+            android:text="今日推荐"
+            android:textColor="#000"
+            android:textSize="15dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:layout_below="@id/tv_1"
+            android:gravity="center_horizontal"
+            android:text="今天听什么？村长告诉你" />
+    </RelativeLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recy"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+</LinearLayout>
